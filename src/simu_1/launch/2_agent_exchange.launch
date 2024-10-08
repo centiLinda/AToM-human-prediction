@@ -1,0 +1,18 @@
+<launch>
+    <rosparam file="$(find ilq_solver)/config/1_2AgentExchange_config.yaml" command="load" />
+    <node pkg="simu_1" type="robot.py" name="robot" output="screen"/>
+    <node pkg="simu_1" type="human.py" name="human" output="screen"/>
+    <node pkg="simu_1" type="mpc.py" name="mpc" output="screen"/>
+    <node pkg="simu_1" type="viz.py" name="viz" output="screen"/>
+    <node pkg="helpers" type="trigger.py" name="trigger" output="screen"/>
+
+    <node pkg="ilq_solver" type="simple_2_agent_exchange" name="prediction" output="screen"/>
+    <!-- <node pkg="simu_1" type="baseline_cv.py" name="prediction" output="screen"/> -->
+    <!-- <node pkg="simu_1" type="baseline_sf.py" name="prediction" output="screen"/> -->
+    <!-- <node pkg="simu_1" type="baseline_trajectron.py" name="prediction" output="screen">
+        <env name="PYTHONPATH" value="$(env PYTHONPATH):$(find simu_1)/scripts/trajectron"/>
+    </node> -->
+    <!-- <node pkg="simu_1" type="baseline_memonet.py" name="prediction" output="screen">
+        <env name="PYTHONPATH" value="$(env PYTHONPATH):$(find simu_1)/scripts/memonet"/>
+    </node> -->
+</launch>

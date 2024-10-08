@@ -2,7 +2,6 @@ build/
 devel/
 logs/
 .catkin_tools
-viz/
 
 __pycache__/
 .DS_Store
@@ -18,5 +17,3 @@ __pycache__/
 *.pt
 
 model_encdec_trajectory
-
-src/simu/scripts/test/PySocialForce/

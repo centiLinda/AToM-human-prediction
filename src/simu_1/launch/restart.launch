@@ -1,0 +1,7 @@
+<launch>
+    <rosparam file="$(find ilq_solver)/config/1_2AgentExchange_config.yaml" command="load" />
+    <node pkg="simu_1" type="robot.py" name="robot" output="screen"/>
+    <node pkg="simu_1" type="human.py" name="human" output="screen"/>
+    <node pkg="simu_1" type="mpc.py" name="mpc" output="screen"/>
+    <node pkg="simu_1" type="viz.py" name="viz" output="screen"/>
+</launch>

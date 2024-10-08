@@ -1,0 +1,28 @@
+x1_start: 0.0
+y1_start: 6.0
+x2_start: 10.0
+y2_start: 5.8
+
+x1_goal: 10.0
+y1_goal: 6.0
+x2_goal: 0.0
+y2_goal: 5.8
+
+# behavioural params theta, to be updated by UKF
+prox1_threshold: 2.0
+prox2_threshold: 2.0
+v1_limit: 0.8
+v2_limit: 0.8
+
+# solver cost weights
+wGoal: 50.0
+wSpeed: 1000.0
+wProximity: 600.0
+wControl: 10.0
+
+# simulated human params, to be updated between each round
+human_v: 0.8
+human_detour: 4.0
+# params used in paper: 0.8/4.0, 0.8/3.4, 0.9/2.8, 0.9/2.2, 1.0/1.6, 1.0/1.0, 1.1/1.0, 1.1/1.0
+
+name: 'test_experiment'
