@@ -25,6 +25,6 @@ To repeat the experiment:
 where `-d` and `-v` modify the detour and speed of the simulated human. The values used in the paper can be found in each config file in `ilq_solver\config\`.
 
 ## TODO
-- [] links to paper & supplementary video
-- [] acknowledgement & citation
-- [] simu_2 & simu_3 pkg
+- [ ] links to paper & supplementary video
+- [ ] acknowledgement & citation
+- [ ] simu_2 & simu_3 pkg
