@@ -1,4 +1,4 @@
-# AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions [ICRA 2025]
+# [ICRA 2025] AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions
 
 **NOTE**: More content to be added (see TODO). Feel free to post an issue if you have any questions.
 
