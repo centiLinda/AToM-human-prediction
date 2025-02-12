@@ -1,6 +1,6 @@
-# AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions
+# AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions [ICRA 2025]
 
-**NOTE**: More content to be added after paper acceptance. Feel free to post an issue if you have any questions.
+**NOTE**: More content to be added (see TODO). Feel free to post an issue if you have any questions.
 
 ## Getting started
 
@@ -25,6 +25,22 @@ To repeat the experiment:
 where `-d` and `-v` modify the detour and speed of the simulated human. The values used in the paper can be found in each config file in `ilq_solver\config\`.
 
 ## TODO
-- [ ] links to paper & supplementary video
-- [ ] acknowledgement & citation
+- [ ] links to supplementary video
+- [ ] update ICRA citation
 - [ ] simu_2 & simu_3 pkg
+
+## Citation
+
+If you find this work useful, please cite [AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions](https://arxiv.org/abs/2502.05792) ([pdf](https://arxiv.org/abs/2502.05792), [video]()):
+
+```bibtex
+@misc{liao2025atomadaptivetheoryofmindbasedhuman,
+      title={AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions}, 
+      author={Yuwen Liao and Muqing Cao and Xinhang Xu and Lihua Xie},
+      year={2025},
+      eprint={2502.05792},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2502.05792}, 
+}
+```
