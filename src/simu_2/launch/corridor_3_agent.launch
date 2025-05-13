@@ -1,0 +1,18 @@
+<launch>
+    <rosparam file="$(find ilq_solver)/config/2_3AgentOvertake_config.yaml" command="load" />
+    <node pkg="simu_2" type="robot_3_agent.py" name="robot" output="screen"/>
+    <node pkg="simu_2" type="human_3_agent_corridor.py" name="human" output="screen" />
+    <node pkg="simu_2" type="mpc_3_agent_corridor.py" name="mpc" output="screen"/>
+    <node pkg="simu_2" type="viz_3_agent_corridor.py" name="viz" output="screen"/>
+    <node pkg="helpers" type="trigger.py" name="trigger" output="screen"/>
+
+    <node pkg="ilq_solver" type="corridor_3_agent" name="prediction" output="screen"/>
+    <!-- <node pkg="simu_2" type="baseline_cv_3_agent.py" name="prediction" output="screen"/> -->
+    <!-- <node pkg="simu_2" type="baseline_sf_3_agent.py" name="prediction" output="screen"/> -->
+    <!-- <node pkg="simu_2" type="baseline_trajectron_3_agent.py" name="prediction" output="screen">
+        <env name="PYTHONPATH" value="$(env PYTHONPATH):$(find simu_2)/scripts/trajectron"/>
+    </node> -->
+    <!-- <node pkg="simu_2" type="baseline_memonet_3_agent.py" name="prediction" output="screen">
+        <env name="PYTHONPATH" value="$(env PYTHONPATH):$(find simu_2)/scripts/memonet"/>
+    </node> -->
+</launch>

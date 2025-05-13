@@ -1,7 +1,5 @@
 # [ICRA 2025] AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions
 
-**NOTE**: More content to be added (see TODO). Feel free to post an issue if you have any questions.
-
 ## Getting started
 
 This code has been tested on [ROS1](https://wiki.ros.org/ROS/Tutorials) Noetic with Python 3.8. 
@@ -25,13 +23,11 @@ To repeat the experiment:
 where `-d` and `-v` modify the detour and speed of the simulated human. The values used in the paper can be found in each config file in `ilq_solver\config\`.
 
 ## TODO
-- [ ] links to supplementary video
 - [ ] update ICRA citation
-- [ ] simu_2 & simu_3 pkg
 
 ## Citation
 
-If you find this work useful, please cite [AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions](https://arxiv.org/abs/2502.05792) ([pdf](https://arxiv.org/abs/2502.05792), [video]()):
+If you find this work useful, please cite [AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions](https://arxiv.org/abs/2502.05792) ([pdf](https://arxiv.org/abs/2502.05792), [video](https://youtu.be/He95BgiUME8)):
 
 ```bibtex
 @misc{liao2025atomadaptivetheoryofmindbasedhuman,

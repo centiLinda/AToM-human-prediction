@@ -1,0 +1,43 @@
+x1_start: 2.0
+y1_start: 8.0
+x2_start: 2.5
+y2_start: 1.0
+x3_start: 2.5
+y3_start: 0.0
+
+x1_goal: 2.0
+y1_goal: 0.0
+x2_goal: 2.5
+y2_goal: 7.0
+x3_goal: 2.5
+y3_goal: 8.0
+
+# wall
+width: 1.0
+end_y: 8.0
+right_x: 4.0 # right_x - width is actual right wall position
+
+# behavioural params theta, to be updated by UKF
+prox1_threshold: 2.0
+prox2_threshold: 2.0
+prox3_threshold: 2.0
+v1_limit: 0.8
+v2_limit: 0.8
+v3_limit: 0.8
+
+# solver cost weights
+wGoal: 50.0
+wSpeed: 1000.0
+wProximity: 600.0
+wControl: 10.0
+wObstacle: 800.0
+
+# simulated human params, to be updated between each round
+vel_1: 0.5
+detour_1: 2.5
+vel_2: 0.7
+detour_2: 0.0
+# params used in paper: 0.5/2.5/0.7/0.0, 0.6/2.3/0.65/0.2, 0.7/2.1/0.6/0.4, 0.8/1.9/0.55/0.6
+#                       0.9/1.7/0.5/0.4, 1.0/1.5/0.45/0.2, 1.1/1.3/0.4/0.0, 1.2/1.1/0.35/0.0
+
+name: 'test_experiment'

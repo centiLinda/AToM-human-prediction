@@ -1,0 +1,40 @@
+x1_start: 0.0
+y1_start: 4.0
+x2_start: 0.0
+y2_start: 1.0
+
+x1_goal: 5.0
+y1_goal: 4.0
+x2_goal: 5.0
+y2_goal: 1.0
+
+# wall
+width: 2.25
+start_x: 1.5
+end_x: 3.5
+upper_y: 5.0
+lower_y: 0.0
+
+# behavioural params theta, to be updated by UKF
+prox1_threshold: 0.8
+prox2_threshold: 2.0
+v1_limit: 0.7
+v2_limit: 0.4
+
+# solver cost weights
+wGoal: 50.0
+wSpeed: 1000.0
+wProximity: 600.0
+wControl: 10.0
+wObstacle: 1500.0
+
+# simulated human params, to be updated between each round
+human_v: 0.5
+human_detour: -2.0
+# params used in paper:
+# conservative: 0.5/-2.0, 0.5/-2.1, 0.5/-2.2, 0.5/-2.3, 0.5/-2.4
+# cooperative: 0.6/-2.4, 0.7/-2.1, 0.6/-2.5, 0.5/-2.3, 0.6/-2.6
+# aggressive: 0.6/-2.8, 0.7/-2.9, 0.7/-3.0, 0.8/-3.1, 0.8/-3.2
+
+# rosparam set /moving 0 when human wait for robot
+name: 'test_experiment'

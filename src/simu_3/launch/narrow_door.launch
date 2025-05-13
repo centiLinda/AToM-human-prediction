@@ -1,0 +1,11 @@
+<launch>
+    <rosparam file="$(find ilq_solver)/config/3_2AgentDoorway_config.yaml" command="load" />
+    <node pkg="simu_3" type="robot_narrow_door.py" name="robot" output="screen"/>
+    <node pkg="simu_3" type="human_narrow_door.py" name="human" output="screen" />
+    <node pkg="simu_3" type="mpc_narrow_door.py" name="mpc" output="screen"/>
+    <node pkg="simu_3" type="viz_narrow_door.py" name="viz" output="screen"/>
+    <node pkg="helpers" type="trigger.py" name="trigger" output="screen"/>
+
+    <node pkg="ilq_solver" type="2_agent_narrow_door" name="prediction" output="screen"/>
+    <!-- <node pkg="simu_3" type="baseline_sf_narrow.py" name="prediction" output="screen"/> -->
+</launch>

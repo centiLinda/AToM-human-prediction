@@ -1,0 +1,7 @@
+<launch>
+    <rosparam file="$(find ilq_solver)/config/2_3AgentOvertake_config.yaml" command="load" />
+    <node pkg="simu_2" type="robot_3_agent.py" name="robot" output="screen"/>
+    <node pkg="simu_2" type="human_3_agent_corridor.py" name="human" output="screen" />
+    <node pkg="simu_2" type="mpc_3_agent_corridor.py" name="mpc" output="screen"/>
+    <node pkg="simu_2" type="viz_3_agent_corridor.py" name="viz" output="screen"/>
+</launch>
