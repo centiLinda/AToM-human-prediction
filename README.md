@@ -22,21 +22,17 @@ To repeat the experiment:
 ```
 where `-d` and `-v` modify the detour and speed of the simulated human. The values used in the paper can be found in each config file in `ilq_solver\config\`.
 
-## TODO
-- [ ] update ICRA citation
-
 ## Citation
 
 If you find this work useful, please cite [AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions](https://arxiv.org/abs/2502.05792) ([pdf](https://arxiv.org/abs/2502.05792), [video](https://youtu.be/He95BgiUME8)):
 
 ```bibtex
-@misc{liao2025atomadaptivetheoryofmindbasedhuman,
-      title={AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions}, 
-      author={Yuwen Liao and Muqing Cao and Xinhang Xu and Lihua Xie},
-      year={2025},
-      eprint={2502.05792},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2502.05792}, 
+@inproceedings{liao2025atom,
+  title={AToM: Adaptive Theory-of-Mind-Based Human Motion Prediction in Long-Term Human-Robot Interactions},
+  author={Liao, Yuwen and Cao, Muqing and Xu, Xinhang and Xie, Lihua},
+  booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={8189--8195},
+  year={2025},
+  organization={IEEE}
 }
 ```
