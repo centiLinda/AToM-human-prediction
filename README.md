@@ -20,7 +20,7 @@ To repeat the experiment:
 ```
 ./restart_simu_1.sh -d xx -v xx
 ```
-where `-d` and `-v` modify the detour and speed of the simulated human. The values used in the paper can be found in each config file in `ilq_solver\config\`.
+where `-d` and `-v` modify the detour and speed of the simulated human. The values used in the paper can be found in each config file in `ilq_solver/config/`.
 
 ## Citation
 
